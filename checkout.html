@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+    <meta name="author" content="Khalid">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpMyLikes</title>
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body id="checkout-page">
+<!-- Header -->
+<header class="checkout-page">
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container p-1 d-flex justify-content-between align-items-center">
+        <!-- Back Button -->
+        <div class="back_btn">
+          <a href="checkout.html" class="btn btn-link text-decoration-none"><img src="assets/img/right-angles.svg" alt="right-angles"> Back</a>
+        </div>
+  
+        <!-- Center Logo -->
+        <div class="check-center-brand">
+          <a class="navbar-brand d-block mx-auto" href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
+        </div>
+  
+        <!-- Right Section -->
+        <div class="d-flex align-items-center">
+          <!-- Stars -->
+          <div class="stars d-none d-md-flex align-items-center me-3">
+            <p class="date mb-0 me-2 fw-bold">5.0</p>
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+
+           <!-- Collapsible Menu -->
+           <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Close Button for Mobile -->  
+            <ul class="navbar-nav ms-auto" id="checkout_menu">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <!-- Instagram Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="instagramDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Instagram
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="instagramDropdown">
+                        <li><a class="dropdown-item" href="instagram-follower.html">Buy Instagram Followers</a></li>
+                        <li><a class="dropdown-item" href="instagram-likes.html">Buy Instagram Likes</a></li>
+                        <li><a class="dropdown-item" href="instagram-views.html">Buy Instagram Views</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Buy Instagram Impressions</a></li> -->
+                        <li><a class="dropdown-item" href="instagram-comments.html">Buy Instagram Comments</a></li>
+                    </ul>
+                </li>
+                <!-- YouTube Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="youtubeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        YouTube
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="youtubeDropdown">
+                        <li><a class="dropdown-item" href="youtube-subcriber.html">Buy YouTube Subscribers</a></li>
+                        <li><a class="dropdown-item" href="youtube-views.html">Buy YouTube Views</a></li>
+                    </ul>
+                </li>
+                <!-- TikTok Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="tiktokDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        TikTok
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="tiktokDropdown">
+                        <li><a class="dropdown-item" href="Tiktok-followers.html">Buy TikTok Followers</a></li>
+                        <li><a class="dropdown-item" href="Tiktok-like.html">Buy TikTok Likes</a></li>
+                        <li><a class="dropdown-item" href="Tiktok-view.html">Buy TikTok Views</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Track-order.html">Track Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+<!-- Banner -->
+<div class="like-banner d-flex align-items-center" id="cs-intagram">
+    <div class="container">
+        <div class="row">
+             <div class="row" id="checkout-form">
+                <div class="col-md-6">
+                    <div class="checkout-form p-4 border rounded bg-light">
+                        <!-- Active Status -->
+                        <div class="active-status text-center mb-3">
+                          <p class="mb-0">
+                            <strong><img src="assets/img/dotted.svg" alt="dotted"> 250 Likes Delivered</strong>
+                            <span class="text-muted">
+                              <img src="assets/img/green-check.svg" alt="check" class="me-2" width="24" id="active-check"> 4 min ago
+                            </span>
+                          </p>
+                        </div>
+                      
+                        <!-- Heading -->
+                        <h5 class="mb-4 pb-3 text-center">Instagram Followers</h5>
+                      
+                        <!-- Instagram Username -->
+                        <div class="mb-3 mt-4">
+                          <!-- <label for="instagramUsername" class="form-label">Instagram Username</label> -->
+                          <div class="input-group" id="checkout-input">
+                            <span class="input-group-text">
+                              <img src="assets/img/instagram-checkout.svg" alt="Instagram" width="20">
+                            </span>
+                            <input type="text" id="instagramUsername" class="form-control" placeholder="Enter Instagram username" required>
+                          </div>
+                        </div>
+                      
+                        <!-- Email -->
+                        <div class="mb-3">
+                          <!-- <label for="email" class="form-label">Your Email</label> -->
+                          <div class="input-group" id="checkout-input">
+                            <span class="input-group-text">
+                              <img src="assets/img/envlop-checkout.svg" alt="Envelope" width="20">
+                            </span>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                          </div>
+                        </div>
+                      
+                        <!-- Price Dropdown -->
+                        <div class="mb-3">
+                          <!-- <label for="followersPrice" class="form-label">Select Followers Package</label> -->
+                          <div class="input-group" id="checkout-input">
+                            <span class="input-group-text">
+                              <img src="assets/img/follwers.svg" alt="Users" width="20">
+                            </span>
+                            <select id="followersPrice" class="form-select" required>
+                              <option value="" disabled selected>Select package</option>
+                              <option value="100">100 Followers - 10€</option>
+                              <option value="500">500 Followers - 45€</option>
+                              <option value="1000">1000 Followers - 80€</option>
+                              <option value="5000">5000 Followers - 350€</option>
+                            </select>
+                          </div>
+                        </div>
+                      
+                        <!-- Special Discount Checkbox -->
+                        <div class="form-check mb-3">
+                          <input type="checkbox" id="specialDiscount" class="form-check-input">
+                          <label for="specialDiscount" class="form-check-label" id="special-discount">Send me special discounts</label>
+                        </div>
+                      
+                        <!-- Continue Button -->
+                        <a href=".#" onclick="submitContactForm()" id="slider_btn" class="w-100 border-radius">
+                          Continue
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </a>
+                      </div>
+                       
+                </div>
+                 <div class="col-md-6 text-center d-flex justify-content-start">
+                    <div class="insta_user_details mt-5 pt-5">
+                        <div class="stars">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                          <p>Upmylikes.com boosted my Instagram presence. Real followers, fast delivery. Very satisfied!</p>
+                          <div class="user-name">
+                             <h3>Emily Johnson</h3>
+                             <img src="assets/img/varfieid.svg" alt="varfieid" class="img-fluid">
+                          </div>
+                    </div>
+                 </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- footer -->
+<div class="like-footer">
+   <div class="container">
+       <div class="row mb-5">
+           <!-- Footer Logo Widget -->
+           <div class="col-12 col-md-3 d-flex flex-column justify-content-between">
+               <div class="footer-logo-widget me-3">
+                   <img src="assets/img/logo.svg" alt="Logo" class="img-fluid">
+               </div>
+           </div>
+           <!-- Menu Widget -->
+           <div class="col-6 col-md-2 px-5">
+               <div class="menu-widget">
+                   <ul class="list-unstyled">
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">About Us</a></li>
+                       <li><a href="#">Services</a></li>
+                       <li><a href="#">Contact</a></li>
+                       <li><a href="#">Contact</a></li>
+                       <li><a href="#">Contact</a></li>
+                   </ul>
+               </div>
+           </div>
+           <!-- Social Media Widget -->
+           <div class="col-6 col-md-3">
+               <div class="social-media-widget">
+                   <ul class="list-unstyled">
+                       <li><a href="#">Instagram Video Downloader</a></li>
+                       <li><a href="#">Instagram Profile Picture Viewer</a></li>
+                       <li><a href="#">Instagram Follower Counter</a></li>
+                       <li><a href="#">Instagram Story Downloader</a></li>
+                       <li><a href="#">Instagram Story Viewer</a></li>
+                       <li><a href="#">Twitter Video Downloader</a></li>
+                       <li><a href="#">Instagram Profile Picture Viewer</a></li>
+                       <li><a href="#">Twitter GIF Downloader</a></li>
+                       <li><a href="#">Instagram Story Downloader</a></li>
+                       <li><a href="#">Instagram Story Viewer</a></li>
+                   </ul>
+               </div>
+           </div>
+           <!-- Button Widget -->
+           <div class="col-12 col-md-4">
+               <div class="button-widget">
+                   <a href="#" id="slider_btn">
+                       Buy Instagram Followers
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </a>
+                   <a href="#" id="slider_btn">
+                       Buy Instagram Likes
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </a>
+                   <a href="#" id="slider_btn">
+                       Buy Instagram Views
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </a>
+                   <a href="#" id="slider_btn">
+                       Buy Instagram Comments
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </a>
+                   <a href="#" id="slider_btn" class="btn--tiktok">
+                      Buy TikTok Followers
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </a>
+                   <a href="#" id="slider_btn" class="btn--tiktok">
+                      Buy TikTok Likes
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </a>
+                   <a href="#" id="slider_btn" class="btn--tiktok">
+                    Buy TikTok Views
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+            <div class="col-md-6">
+               <div class="footer-language">
+                   <div class="language-selector d-flex align-items-center">
+                       <!-- Globe Icon -->
+                       <img src="assets/img/global.svg" alt="global" class="me-2" style="width: 20px; height: 20px;">
+                       <!-- Language Selector Dropdown -->
+                       <select id="language" class="form-select form-select-sm" aria-label="Language Selector">
+                           <option value="en">English</option>
+                           <option value="es">Spanish</option>
+                           <option value="fr">French</option>
+                           <option value="de">German</option>
+                       </select>
+                       <!-- Language Label -->
+                       <label for="language" class="ms-2">2023 Upmylikes - All Rights Reserved</label>
+                   </div>
+               </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <div class="scrollbar">
+                   <div class="scrollbar">
+                       <a href="#"><img src="assets/img/scrollbar.svg" alt="scrollbar"></a>
+                   </div>                    
+                </div>
+            </div>
+       </div>
+   </div>
+</div>
+<!-- footer-copy -->
+<div class="copyright">
+    <div class="container">
+       <div class="row">
+           <div class="col-12 col-md-6">
+               <ul class="copyright-nav">
+                   <li><a href="#">Imprint Privacy</a></li>
+                   <li><a href="#">Policy Terms</a></li>
+               </ul>
+           </div>
+           <div class="col-12 col-md-6 d-flex justify-content-end" id="footer_strip">
+               <img src="assets/img/payment.svg" alt="payment" class="w-50 img-fluid" width="100%" height="100%">
+           </div>
+       </div>
+    </div>
+</div>
+
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+
+  navbarToggler.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  });
+</script>
+</body>
+</html>
